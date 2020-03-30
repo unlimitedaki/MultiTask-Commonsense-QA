@@ -1,0 +1,35 @@
+{
+    "csqa":
+    {
+        "task_id":0,
+        "task_type":"classification",
+        "train_dir":"datasets/CSQA/train_rand_split.jsonl",
+        "dev_dir":"datasets/CSQA/dev_rand_split.jsonl",
+        "max_seq_length":70,
+        "train_batch_size":50,
+        "dev_batch_size":10,
+        "is_pair":true
+    },
+    "mcscript2":
+    {
+        "task_id":1,
+        "task_type":"classification",
+        "train_dir":"datasets/MCScript2.0/train-data.xml",
+        "dev_dir":"datasets/MCScript2.0/dev-data.xml",
+        "max_seq_length":256,
+        "train_batch_size":26,
+        "dev_batch_size":5,
+        "is_pair":true
+    },
+    "cosmosqa":{
+        "task_id":2,
+        "task_type":"classification",
+        "train_dir":"datasets/cosmosqa-data/train.jsonl",
+        "dev_dir":"datasets/cosmosqa-data/valid.jsonl",
+        "max_seq_length":128,
+        "train_batch_size":34,
+        "dev_batch_size":7,
+        "is_pair":true
+    }
+    
+}

@@ -1,0 +1,14 @@
+python run_multitask_csqa.py \
+    --datasets "csqa mcscript2 cosmosqa" \
+    --datasets_config "datasets.json" \
+    --do_train \
+    --do_preprocess \
+    --learning_rate 2e-5 \
+    --eps 1e-8 \
+    --num_warmup_steps 2968 \
+    --num_train_epochs 10 \
+    --save_model_name "xlnet_base_cased_mt_nosan" \
+    --model "xlnet-base-cased" \
+    --cache_dir "model/cache" \
+    --output_dir "model" \
+    --dataset_features_dir "datasets/features" \
